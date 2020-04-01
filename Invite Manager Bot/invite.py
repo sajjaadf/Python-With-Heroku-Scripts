@@ -5,7 +5,14 @@ Invite Manager Bot Written in discord.py
 import discord
 client=discord.Client()
 
-
+role_ranks={
+	'Gold':range(5,9),
+	'Platinum':range(10,14),
+	'Diamond':range(15,24),
+	'Crown':range(25,49),
+	'Ace':range(50,99),
+	'Conqueror':range(100,100000)
+}
 
 @client.event
 async def on_ready():
@@ -51,4 +58,4 @@ async def on_message(message):
 		await client.send_message(message.channel,embed=embed)
 
 
-client.run('NjYxMDk2MTA0MzI2MzMyNDE2.XgmkbQ.QmghTv5fUE28HlhjmUVeTuvCgW8') 
+client.run('NjYzMjc5MzUyMzQyOTA0ODQz.Xi8SxQ.Apz8ltAL4n-QR-IuundmkgQQ2zo') 
